@@ -30,12 +30,12 @@ public class Login extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String accountString,passwordString;
+                String accountString;
+                String passwordString;
                 accountString=Account.getText().toString();
                 passwordString=Password.getText().toString();
                 if(accountString.equals("123")&&passwordString.equals("456")){
                     Intent intent=new Intent(Login.this,MainPage.class);
-                    Toast.makeText(Login.this,"登录成功",Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                 }else{
                     Toast.makeText(Login.this,"密码错误",Toast.LENGTH_SHORT).show();
