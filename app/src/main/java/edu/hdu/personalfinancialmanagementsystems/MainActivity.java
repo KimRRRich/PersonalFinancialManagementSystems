@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        if (getSupportActionBar() != null){
+            getSupportActionBar().hide();
+        }
         Skip_Button=findViewById(R.id.Skip_Button);
         Skip_Button.getBackground().setAlpha(100);
         Intent intent=new Intent(MainActivity.this,Login.class);

@@ -67,13 +67,13 @@
         app:layout_constraintTop_toBottomOf="@+id/Login_Password" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Login_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
         android:layout_marginTop="84dp"
         android:text="个人理财通"
-        android:textColor="#FFFFFF"
+        android:textColor="#C5C5C5"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
