@@ -15,13 +15,11 @@
         android:layout_marginTop="328dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Account"
         android:textColor="#B4B4C8"
         android:textColorHint="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -49,6 +47,7 @@
         android:layout_marginTop="40dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="#B4B4C8"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="@+id/Login_Account"
