@@ -1,5 +1,6 @@
 package edu.hdu.personalfinancialmanagementsystems.ui.home;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+
+import edu.hdu.personalfinancialmanagementsystems.R;
 import edu.hdu.personalfinancialmanagementsystems.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
@@ -21,10 +24,12 @@ private FragmentHomeBinding binding;
 
     binding = FragmentHomeBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
+    TextView income_textview=root.findViewById(R.id.incom_textview);
+    TextView outcome_textview=root.findViewById(R.id.outcome_textview);
+    income_textview.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/fonts_1.ttf"));
+    outcome_textview.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/fonts_1.ttf"));
 
-        //final TextView textView = binding.textHome;
-        //homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        return root;
+    return root;
     }
 
 @Override

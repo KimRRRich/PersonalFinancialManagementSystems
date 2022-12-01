@@ -4,11 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/StudyMaterials/AndroidStudioProjects/PersonalFinancialManagementSystems/app/src/main/res/drawable/button_circle_shape.xml" value="0.377" />
-        <entry key="..\:/StudyMaterials/AndroidStudioProjects/PersonalFinancialManagementSystems/app/src/main/res/layout/activity_login.xml" value="0.29904761904761906" />
+        <entry key="..\:/StudyMaterials/AndroidStudioProjects/PersonalFinancialManagementSystems/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/StudyMaterials/AndroidStudioProjects/PersonalFinancialManagementSystems/app/src/main/res/layout/activity_main.xml" value="0.25779967159277506" />
         <entry key="..\:/StudyMaterials/AndroidStudioProjects/PersonalFinancialManagementSystems/app/src/main/res/layout/activity_main_page.xml" value="0.3052536231884058" />
         <entry key="..\:/StudyMaterials/AndroidStudioProjects/PersonalFinancialManagementSystems/app/src/main/res/layout/fragment_dashboard.xml" value="0.32708333333333334" />
-        <entry key="..\:/StudyMaterials/AndroidStudioProjects/PersonalFinancialManagementSystems/app/src/main/res/layout/fragment_home.xml" value="0.32708333333333334" />
+        <entry key="..\:/StudyMaterials/AndroidStudioProjects/PersonalFinancialManagementSystems/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/StudyMaterials/AndroidStudioProjects/PersonalFinancialManagementSystems/app/src/main/res/layout/fragment_income_and_expenses.xml" value="0.32708333333333334" />
         <entry key="..\:/StudyMaterials/AndroidStudioProjects/PersonalFinancialManagementSystems/app/src/main/res/layout/fragment_notifications.xml" value="0.22" />
         <entry key="..\:/StudyMaterials/AndroidStudioProjects/PersonalFinancialManagementSystems/app/src/main/res/menu/bottom_nav_menu.xml" value="0.32708333333333334" />
