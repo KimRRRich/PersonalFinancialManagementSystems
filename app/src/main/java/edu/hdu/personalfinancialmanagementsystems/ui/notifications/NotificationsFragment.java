@@ -1,6 +1,7 @@
 package edu.hdu.personalfinancialmanagementsystems.ui.notifications;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,6 +33,17 @@ private FragmentNotificationsBinding binding;
     binding = FragmentNotificationsBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
     Button QuitButton=root.findViewById(R.id.QuitButton);
+    TextView username_textview=root.findViewById(R.id.uesrname_textview);
+    Button ChangePassword=root.findViewById(R.id.ChangePassword);
+    Button SystemSetting =root.findViewById(R.id.SystemSetting);
+    Button ContactUS=root.findViewById(R.id.ContactUs);
+
+
+    ChangePassword.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/fonts_1.ttf"));
+    SystemSetting.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/fonts_1.ttf"));
+    ContactUS.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/fonts_1.ttf"));
+    username_textview.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/fonts_1.ttf"));
+    QuitButton.setTypeface(Typeface.createFromAsset(getActivity().getAssets(),"fonts/fonts_1.ttf"));
     QuitButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -39,10 +51,7 @@ private FragmentNotificationsBinding binding;
             startActivity(intent);
         }
     });
-    //final Button QuitButton=binding.
 
-//        final TextView textView = binding.textNotifications;
-//        notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

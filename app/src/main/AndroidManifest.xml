@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="edu.hdu.personalfinancialmanagementsystems" >
+    package="edu.hdu.personalfinancialmanagementsystems">
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PersonalFinancialManagementSystems"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".NoteShow"
+            android:exported="false" />
+        <activity
+            android:name=".NoteUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".NoteAdd"
+            android:exported="false" />
+        <activity
+            android:name=".OutcomeChart"
+            android:exported="false" />
+        <activity
+            android:name=".OutcomeUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".OutcomeShow"
+            android:exported="false" />
+        <activity
+            android:name=".OutcomeInsert"
+            android:exported="false" />
+        <activity
+            android:name=".IncomeChart"
+            android:exported="false" />
+        <activity
+            android:name=".IncomeUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".IncomeShow"
+            android:exported="false" />
+        <activity
+            android:name=".IncomeInsert"
+            android:exported="false" />
         <activity
             android:name=".MainPage"
             android:exported="false"
@@ -22,7 +55,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

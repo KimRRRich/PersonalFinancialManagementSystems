@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="480dp"
+    android:layout_height="800dp"
+    tools:context=".OutcomeInsert">
+
+    <TextView
+        android:id="@+id/outcome_update_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="支出金额"
+        android:textColor="#2A3E52"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outcome_update_textView1" />
+
+    <TextView
+        android:id="@+id/outcome_update_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="支出类型"
+        android:textColor="#2A3E52"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outcome_update_textView3" />
+
+    <TextView
+        android:id="@+id/outcome_update_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="40dp"
+        android:text="备注"
+        android:textColor="#2A3E52"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outcome_update_textView5" />
+
+    <TextView
+        android:id="@+id/outcome_update_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="支出地点"
+        android:textColor="#2A3E52"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outcome_update_textView4" />
+
+    <TextView
+        android:id="@+id/outcome_update_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="支出时间"
+        android:textColor="#2A3E52"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outcome_update_textView2" />
+
+    <EditText
+        android:id="@+id/outcome_update_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/outcome_update_textView2"
+        app:layout_constraintTop_toTopOf="@+id/outcome_update_textView2" />
+
+    <EditText
+        android:id="@+id/outcome_update_handler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/outcome_update_textView5"
+        app:layout_constraintTop_toTopOf="@+id/outcome_update_textView5" />
+
+    <EditText
+        android:id="@+id/outcome_update_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/outcome_update_textView6"
+        app:layout_constraintTop_toTopOf="@+id/outcome_update_textView6" />
+
+    <Button
+        android:id="@+id/outcome_update_updatebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="id更新"
+        app:layout_constraintStart_toEndOf="@+id/outcome_update_findidbutton"
+        app:layout_constraintTop_toTopOf="@+id/outcome_update_findidbutton" />
+
+    <Button
+        android:id="@+id/outcome_update_deletebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="id删除"
+        app:layout_constraintStart_toEndOf="@+id/outcome_update_updatebutton"
+        app:layout_constraintTop_toTopOf="@+id/outcome_update_updatebutton" />
+
+    <Button
+        android:id="@+id/outcome_update_findidbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="id查询"
+        app:layout_constraintStart_toEndOf="@+id/outcome_update_idvalue"
+        app:layout_constraintTop_toTopOf="@+id/outcome_update_idvalue" />
+
+    <TextView
+        android:id="@+id/outcome_update_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:text="id号"
+        android:textColor="#2A3E52"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/outcome_update_idvalue"
+        android:layout_width="64dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/outcome_update_textView1"
+        app:layout_constraintTop_toTopOf="@+id/outcome_update_textView1" />
+
+    <Spinner
+        android:id="@+id/outcome_update_spinner"
+        android:layout_width="217dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toEndOf="@+id/outcome_update_textView4"
+        app:layout_constraintTop_toTopOf="@+id/outcome_update_textView4" />
+
+    <TextView
+        android:id="@+id/outcome_update_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:text="（双击插入时间）"
+        app:layout_constraintStart_toEndOf="@+id/outcome_update_time"
+        app:layout_constraintTop_toTopOf="@+id/outcome_update_time" />
+
+    <EditText
+        android:id="@+id/outcome_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/outcome_update_textView3"
+        app:layout_constraintTop_toTopOf="@+id/outcome_update_textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
