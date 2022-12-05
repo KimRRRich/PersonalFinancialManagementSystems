@@ -137,6 +137,8 @@ public class OutcomeInsert extends AppCompatActivity {
                 }else{
                     Toast.makeText(OutcomeInsert.this,"有必填项未填！",Toast.LENGTH_SHORT).show();
                 }
+                db_write.close();
+                db_read.close();
             }
         });
 

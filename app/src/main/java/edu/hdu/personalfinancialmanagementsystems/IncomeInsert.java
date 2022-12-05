@@ -60,7 +60,6 @@ public class IncomeInsert extends AppCompatActivity {
         income_time=findViewById(R.id.income_time);
         income_handler=findViewById(R.id.income_handler);
         income_mark=findViewById(R.id.income_mark);
-        showdatabase=findViewById(R.id.showdatabase);
         income_clear=findViewById(R.id.income_clear);
         spinner=findViewById(R.id.spinner);
         text1=findViewById(R.id.textView6);
@@ -127,8 +126,8 @@ public class IncomeInsert extends AppCompatActivity {
             public void onClick(View view) {
                 db_read=helper.getReadableDatabase();
                 db_write=helper.getWritableDatabase();
-                ContentValues contentValues=new ContentValues();
                 if(!income_money.getText().toString().equals("")&&!income_time.getText().toString().equals("")&&!income_handler.getText().toString().equals("")&&!income_mark.getText().toString().equals("")){
+                    ContentValues contentValues=new ContentValues();
                     contentValues.put("money",Float.parseFloat(income_money.getText().toString()));
                     contentValues.put("time",income_time.getText().toString());
                     contentValues.put("type",spinner.getSelectedItem().toString());
@@ -139,20 +138,6 @@ public class IncomeInsert extends AppCompatActivity {
                 }else{
                     Toast.makeText(IncomeInsert.this,"有必填项未填！",Toast.LENGTH_SHORT).show();
                 }
-
-
-                String msg="";
-                Cursor cursor=db_read.query("tb_inaccont",new String[]{"_id","money","time","type","handler","mark"},null,null,null,null,null);
-                while(cursor.moveToNext()){
-                    String idString=cursor.getString(cursor.getColumnIndexOrThrow("_id"));
-                    String nameString=cursor.getString(cursor.getColumnIndexOrThrow("money"));
-                    String timeString=cursor.getString(cursor.getColumnIndexOrThrow("time"));
-                    String sexString=cursor.getString(cursor.getColumnIndexOrThrow("type"));
-                    String departmentString=cursor.getString(cursor.getColumnIndexOrThrow("handler"));
-                    String salaryString=cursor.getString(cursor.getColumnIndexOrThrow("mark"));
-                    msg=msg+"\n"+"_id："+idString+"  money："+nameString+"  time:"+timeString+"  type："+sexString+"  handler："+departmentString+"  mark："+salaryString+" ";
-                }
-                showdatabase.setText(msg);
                 db_write.close();
                 db_read.close();
             }

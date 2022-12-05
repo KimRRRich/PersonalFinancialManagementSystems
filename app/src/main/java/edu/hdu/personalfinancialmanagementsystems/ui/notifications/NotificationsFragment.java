@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import edu.hdu.personalfinancialmanagementsystems.ChangePassword;
 import edu.hdu.personalfinancialmanagementsystems.Login;
 import edu.hdu.personalfinancialmanagementsystems.MainPage;
 import edu.hdu.personalfinancialmanagementsystems.R;
@@ -44,10 +45,19 @@ private FragmentNotificationsBinding binding;
     ContactUS.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/fonts_1.ttf"));
     username_textview.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/fonts_1.ttf"));
     QuitButton.setTypeface(Typeface.createFromAsset(getActivity().getAssets(),"fonts/fonts_1.ttf"));
+
     QuitButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             Intent intent=new Intent(getActivity(), Login.class);
+            startActivity(intent);
+        }
+    });
+
+    ChangePassword.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent=new Intent(getActivity(), edu.hdu.personalfinancialmanagementsystems.ChangePassword.class);
             startActivity(intent);
         }
     });

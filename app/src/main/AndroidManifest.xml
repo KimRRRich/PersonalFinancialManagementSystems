@@ -14,6 +14,9 @@
         android:theme="@style/Theme.PersonalFinancialManagementSystems"
         tools:targetApi="31">
         <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
             android:name=".NoteShow"
             android:exported="false" />
         <activity
