@@ -98,8 +98,8 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
-        db_write.close();
-        db_read.close();
+//        db_write.close();
+//        db_read.close();
     }
 
 }
