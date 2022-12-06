@@ -15,39 +15,51 @@
         tools:targetApi="31">
         <activity
             android:name=".ChangePassword"
-            android:exported="false" />
+            android:exported="false"
+            android:label="修改密码"/>
         <activity
             android:name=".NoteShow"
+            android:label="便签浏览"
             android:exported="false" />
         <activity
             android:name=".NoteUpdate"
+            android:label="更新/删除便签"
             android:exported="false" />
         <activity
             android:name=".NoteAdd"
+            android:label="新增便签"
             android:exported="false" />
         <activity
             android:name=".OutcomeChart"
+            android:label="支出图表"
             android:exported="false" />
         <activity
             android:name=".OutcomeUpdate"
+            android:label="修改/删除支出信息"
             android:exported="false" />
         <activity
             android:name=".OutcomeShow"
+            android:label="支出浏览"
             android:exported="false" />
         <activity
             android:name=".OutcomeInsert"
+            android:label="新增支出"
             android:exported="false" />
         <activity
             android:name=".IncomeChart"
+            android:label="收入图表"
             android:exported="false" />
         <activity
             android:name=".IncomeUpdate"
+            android:label="修改/删除收入信息"
             android:exported="false" />
         <activity
             android:name=".IncomeShow"
+            android:label="收入浏览"
             android:exported="false" />
         <activity
             android:name=".IncomeInsert"
+            android:label="新增收入"
             android:exported="false" />
         <activity
             android:name=".MainPage"

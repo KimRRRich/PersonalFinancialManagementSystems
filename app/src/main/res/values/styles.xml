@@ -2,10 +2,13 @@
 
     <style name="Widget.Theme.PersonalFinancialManagementSystems.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
         <item name="android:background">@color/black_overlay</item>
+        <item name="colorPrimary">@color/myBarColor</item>
+
     </style>
 
     <style name="Widget.Theme.PersonalFinancialManagementSystems.ButtonBar.Fullscreen" parent="">
         <item name="android:background">@color/black_overlay</item>
         <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="colorPrimary">@color/myBarColor</item>
     </style>
 </resources>
