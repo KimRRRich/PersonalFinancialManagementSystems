@@ -41,6 +41,8 @@ public class IncomeUpdate extends AppCompatActivity {
         public void onCreate(SQLiteDatabase sqLiteDatabase) {
             sqLiteDatabase.execSQL("create table tb_inaccont(_id integer primary key autoincrement,money float,time date,type varchar(20),handler varchar(100),mark varchar(200))");
             sqLiteDatabase.execSQL("create table tb_outaccont(_id integer primary key autoincrement,money float,time date,type varchar(20),handler varchar(100),mark varchar(200))");
+            sqLiteDatabase.execSQL("create table tb_note(_id integer primary key autoincrement,flag varchar(200))");
+            sqLiteDatabase.execSQL("create table tb_pwd(password varchar(20))");
             Toast.makeText(IncomeUpdate.this,"数据库创建成功",Toast.LENGTH_SHORT).show();
         }
 

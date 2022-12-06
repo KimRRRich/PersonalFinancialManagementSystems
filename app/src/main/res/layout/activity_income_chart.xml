@@ -2,14 +2,30 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="480dp"
+    android:layout_height="800dp"
     tools:context=".IncomeChart">
 
-    <lecho.lib.hellocharts.view.LineChartView
-        android:id="@+id/line_chart"
-        android:layout_width="fill_parent"
-        android:layout_height="300dp"
+    <lecho.lib.hellocharts.view.ColumnChartView
+        android:id="@+id/columnChart"
+        android:layout_width="480dp"
+        android:layout_height="635dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Income_ChartChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="12dp"
+        android:text="（日期/收入类型）切换视图"
+        android:textColor="#2A3E52"
+        app:layout_constraintBottom_toTopOf="@+id/columnChart"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
