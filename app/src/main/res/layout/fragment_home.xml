@@ -2,8 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="480dp"
-    android:layout_height="800dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="#FFFFFF"
     tools:context=".ui.home.HomeFragment"
     tools:layout_editor_absoluteX="77dp"
@@ -14,8 +14,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:text="收入"
         android:textColor="#000000"
         android:textSize="48sp"
@@ -23,144 +21,156 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
-    <TextView
-        android:id="@+id/outcome_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="15dp"
-        android:text="支出"
-        android:textColor="#000000"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/outcome_insertimg"
-        app:layout_constraintStart_toEndOf="@+id/imageView10"
-        app:layout_constraintTop_toBottomOf="@+id/income_view" />
-
     <ImageView
-        android:id="@+id/outcome_updateimg"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="284dp"
-        android:src="@drawable/icon_editor"
+        android:id="@+id/imageView10"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon_expense"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/outcome_insertimg"
-        app:layout_constraintTop_toBottomOf="@+id/income_updateimg" />
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
 
     <Button
         android:id="@+id/outcome_insert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="5dp"
         android:text="新增支出"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/outcome_insertimg" />
+
+    <ImageView
+        android:id="@+id/outcome_updateimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_editor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627" />
 
     <Button
         android:id="@+id/outcome_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="5dp"
         android:text="支出信息浏览"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/outcome_viewimg" />
-
-    <ImageView
-        android:id="@+id/outcome_chartimg"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="288dp"
-        android:src="@drawable/icon_chart"
-        app:layout_constraintStart_toEndOf="@+id/outcome_viewimg"
-        app:layout_constraintTop_toBottomOf="@+id/income_chartimg" />
-
-    <Button
-        android:id="@+id/outcome_chart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="4dp"
-        android:text="支出信息汇总图表"
-        app:layout_constraintStart_toEndOf="@+id/outcome_view"
-        app:layout_constraintTop_toBottomOf="@+id/outcome_chartimg" />
-
-    <ImageView
-        android:id="@+id/outcome_viewimg"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="288dp"
-        android:src="@drawable/icon_view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/income_viewimg" />
-
-    <Button
-        android:id="@+id/outcome_update"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="4dp"
-        android:text="修改/删除支出信息"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/outcome_insert"
-        app:layout_constraintTop_toBottomOf="@+id/outcome_updateimg" />
 
     <ImageView
         android:id="@+id/outcome_insertimg"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="284dp"
         android:src="@drawable/icon_docadd"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintHorizontal_bias="0.207"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/income_insertimg" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627" />
+
+    <Button
+        android:id="@+id/outcome_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="支出信息汇总图表"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outcome_chartimg" />
 
     <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="344dp"
-        android:src="@drawable/icon_expense"
+        android:id="@+id/outcome_chartimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_chart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.801" />
+
+    <ImageView
+        android:id="@+id/outcome_viewimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.801" />
+
+    <Button
+        android:id="@+id/outcome_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="修改/删除支出信息"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outcome_updateimg" />
+
+    <TextView
+        android:id="@+id/outcome_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="支出"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
         android:src="@drawable/icon_income"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012" />
 
     <ImageView
         android:id="@+id/income_updateimg"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="4dp"
         android:src="@drawable/icon_editor"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/income_insertimg"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
 
     <Button
         android:id="@+id/income_insert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:text="新增收入"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/income_insertimg" />
 
@@ -168,9 +178,10 @@
         android:id="@+id/income_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:text="收入信息浏览"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/income_viewimg" />
 
@@ -178,54 +189,58 @@
         android:id="@+id/income_chart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:text="收入信息汇总图表"
-        app:layout_constraintStart_toEndOf="@+id/income_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.749"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/income_chartimg" />
 
     <ImageView
         android:id="@+id/income_viewimg"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="72dp"
         android:src="@drawable/icon_view"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintHorizontal_bias="0.207"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/income_insertimg" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.321" />
 
     <Button
         android:id="@+id/income_update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:text="修改/删除收入信息"
-        app:layout_constraintStart_toEndOf="@+id/income_insert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/income_updateimg" />
 
     <ImageView
         android:id="@+id/income_chartimg"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="72dp"
         android:src="@drawable/icon_chart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/income_viewimg"
-        app:layout_constraintTop_toBottomOf="@+id/income_updateimg" />
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.321" />
 
     <ImageView
         android:id="@+id/income_insertimg"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="4dp"
         android:src="@drawable/icon_docadd"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintHorizontal_bias="0.207"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
