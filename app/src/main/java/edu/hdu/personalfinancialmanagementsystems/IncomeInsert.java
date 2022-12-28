@@ -152,9 +152,9 @@ public class IncomeInsert extends AppCompatActivity {
                 income_time.setText("");
                 income_handler.setText("");
                 income_mark.setText("");
-                db_write=helper.getWritableDatabase();
-                db_write.delete("tb_inaccont",null,null);
-                db_write.close();
+//                db_write=helper.getWritableDatabase();
+//                db_write.delete("tb_inaccont",null,null);
+//                db_write.close();
             }
         });
 

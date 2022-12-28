@@ -149,9 +149,9 @@ public class OutcomeInsert extends AppCompatActivity {
                 outcome_time.setText("");
                 outcome_handler.setText("");
                 outcome_mark.setText("");
-                db_write=helper.getWritableDatabase();
-                db_write.delete("tb_outaccont",null,null);
-                db_write.close();
+//                db_write=helper.getWritableDatabase();
+//                db_write.delete("tb_outaccont",null,null);
+//                db_write.close();
             }
         });
 
